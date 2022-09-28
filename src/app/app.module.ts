@@ -11,6 +11,7 @@ import { StoreComponent } from './modules/ecommerce/components/store/store.compo
 import { AboutComponent } from './modules/ecommerce/components/about/about.component';
 import { ContactComponent } from './modules/ecommerce/components/contact/contact.component';
 import { LoginComponent } from './layout/login/login.component';
+import { CheckoutComponent } from './modules/ecommerce/components/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LoginComponent } from './layout/login/login.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

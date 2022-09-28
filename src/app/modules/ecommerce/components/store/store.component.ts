@@ -36,8 +36,8 @@ export class StoreComponent implements OnInit {
             ],
             price: "680.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/ZTVjMzQ2Nz-200x200.JPG",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/ZTVjMzQ2Nz_1-200x200.JPG"
+              "assets/images/store/01.jpg",
+              "assets/images/store/02.jpg"
             ]
           },
           {
@@ -53,7 +53,7 @@ export class StoreComponent implements OnInit {
             ],
             price: "850.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/Bicicleta%20BMX16%20Totem1-200x200.png"
+              "assets/images/store/03.png"
             ]
           },
           {
@@ -72,8 +72,8 @@ export class StoreComponent implements OnInit {
             ],
             price: "706.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/ZTgyZDBmMm-200x200.jpg",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/ZTgyZDBmMm_1-200x200.JPG"
+              "assets/images/store/04.jpg",
+              "assets/images/store/05.jpg"
             ]
           },
           {
@@ -92,8 +92,8 @@ export class StoreComponent implements OnInit {
             ],
             price: "9,000.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/YzVmNWYwOD_785-200x200.jpg",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/YzVmNWYwOD_1_464-200x200.jpg"
+              "assets/images/store/06.jpg",
+              "assets/images/store/07.jpg"
             ]
           }
         ]
@@ -107,8 +107,8 @@ export class StoreComponent implements OnInit {
             details: ["Sin mas información"],
             price: "450.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/NjQwZGNiZT_3-200x200.jpg",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/NjQwZGNiZT_1-200x200.jpg"
+              "assets/images/store/08.jpg",
+              "assets/images/store/09.jpg"
             ]
           },
           {
@@ -117,8 +117,8 @@ export class StoreComponent implements OnInit {
             details: ["Sin mas información"],
             price: "250.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/NDJlODZlMj-200x200.jpg",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/NDJlODZlMj_2-200x200.jpg"
+              "assets/images/store/10.jpg",
+              "assets/images/store/11.jpg"
             ]
           },
           {
@@ -127,8 +127,8 @@ export class StoreComponent implements OnInit {
             details: ["Universal", "Facil de instalar"],
             price: "300.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/YTk3MzQ2M2-200x200.jpg",
-              "https://cdn.pacifiko.com/image/cache/catalog/p/YTk3MzQ2M2_3-200x200.jpg"
+              "assets/images/store/12.jpg",
+              "assets/images/store/13.jpg"
             ]
           },
           {
@@ -137,7 +137,7 @@ export class StoreComponent implements OnInit {
             details: ["Sin mas información"],
             price: "2,100.00",
             images: [
-              "https://cdn.pacifiko.com/image/cache/catalog/p/MGU1YThlMT_1-200x200.jpg"
+              "assets/images/store/14.jpg"
             ]
           }
         ]

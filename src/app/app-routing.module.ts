@@ -6,6 +6,7 @@ import { StoreComponent } from '@modules/ecommerce/components/store/store.compon
 import { AboutComponent } from '@modules/ecommerce/components/about/about.component';
 import { ContactComponent } from '@modules/ecommerce/components/contact/contact.component';
 import { LoginComponent } from './layout/login/login.component';
+import { CheckoutComponent } from '@modules/ecommerce/components/checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'checkout',
+        component: CheckoutComponent
       }
     ]
   },

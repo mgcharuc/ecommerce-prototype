@@ -1,0 +1,126 @@
+<div class="container mx-auto px-6 py-6 bg-white dark:bg-slate-800 dark:text-white bg-opacity-80 ">
+    <div class="h-full">
+        <!-- Pay component -->
+        <div>
+            <!-- Card background -->
+            <div class="relative px-4 sm:px-6 lg:px-8 max-w-lg mx-auto">
+                <img class="rounded-t shadow-lg" src="assets/images/pay-bg.jpg" width="460" height="180"
+                    alt="Pay background" />
+            </div>
+            <!-- Card body -->
+            <div class="relative px-4 sm:px-6 lg:px-8 pb-8 max-w-lg mx-auto">
+                <div class="px-8 pb-6 rounded-b shadow-lg">
+
+                    <!-- Card header -->
+                    <div class="text-center mb-6 mt-6">
+                        <!-- <div class="mb-2">
+                            <img class="-mt-8 inline-flex rounded-full"
+                                src="https://preview.cruip.com/mosaic/images/user-64-13.jpg" width="64" height="64"
+                                alt="User" />
+                        </div> -->
+                        <h1 class="text-xl leading-snug text-gray-800 font-semibold mb-2">Completa tu compra 🔥</h1>
+                        <div class="text-sm text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices
+                            mi
+                            tempus
+                            imperdiet nulla.
+                        </div>
+                    </div>
+
+                    <!-- Toggle -->
+                    <!-- <div class="flex justify-center mb-6">
+                        <div class="relative flex w-full p-1 bg-gray-50 rounded">
+                            <span class="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
+                                <span
+                                    class="absolute inset-0 w-1/2 bg-white rounded border border-gray-200 shadow-sm transform transition duration-150 ease-in-out"
+                                    :class="card ? 'translate-x-0' : 'translate-x-full'"></span>
+                            </span>
+                            <button
+                                    class="relative flex-1 text-sm font-medium p-1 transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2"
+                                    @click.prevent="card = true">Pay With Card</button>
+                                <button
+                                    class="relative flex-1 text-sm font-medium p-1 transition duration-150 ease-in-out focus:outline-none focus-visible:ring-2"
+                                    @click.prevent="card = false">Pay With PayPal</button>
+                        </div>
+                    </div> -->
+
+                    <!-- Card form -->
+                    <div x-show="card">
+                        <div class="space-y-4">
+                            <!-- Card Number -->
+                            <div>
+                                <label class="block text-sm font-medium mb-1" for="card-nr">Número de Tarjeta <span
+                                        class="text-red-500">*</span></label>
+                                <input id="card-nr"
+                                    class="p-3 mt-4 placeholder-gray-400 w-full border border-gray-400 rounded-md outline-none"
+                                    type="text" placeholder="1234 1234 1234 1234" />
+                            </div>
+                            <!-- Expiry and CVC -->
+                            <div class="flex space-x-4">
+                                <div class="flex-1">
+                                    <label class="block text-sm font-medium mb-1" for="card-expiry">Fecha de Expiración
+                                        <span class="text-red-500">*</span></label>
+                                    <input id="card-expiry"
+                                        class="p-3 mt-4 placeholder-gray-400 w-full border border-gray-400 rounded-md outline-none"
+                                        type="text" placeholder="MM/YY" />
+                                </div>
+                                <div class="flex-1">
+                                    <label class="block text-sm font-medium mb-1" for="card-cvc">Código de Seguridad
+                                        <span class="text-red-500">*</span></label>
+                                    <input id="card-cvc"
+                                        class="p-3 mt-4 placeholder-gray-400 w-full border border-gray-400 rounded-md outline-none"
+                                        type="text" placeholder="CVC" />
+                                </div>
+                            </div>
+                            <!-- Name on Card -->
+                            <div>
+                                <label class="block text-sm font-medium mb-1" for="card-name">Titular de Tarjeta <span
+                                        class="text-red-500">*</span></label>
+                                <input id="card-name"
+                                    class="p-3 mt-4 placeholder-gray-400 w-full border border-gray-400 rounded-md outline-none"
+                                    type="text" placeholder="Juan Perez" />
+                            </div>
+                            <!-- Email -->
+                            <div>
+                                <label class="block text-sm font-medium mb-1" for="card-email">Correo Electrónico <span
+                                        class="text-red-500">*</span></label>
+                                <input id="card-email"
+                                    class="p-3 mt-4 placeholder-gray-400 w-full border border-gray-400 rounded-md outline-none"
+                                    type="email" placeholder="ejemplo@tucorreo.com" />
+                            </div>
+                        </div>
+                        <!-- Form footer -->
+                        <div class="mt-6">
+                            <div class="text-xs text-gray-500 italic text-justify mb-4">Se le cobrarán Q1,850.00,
+                                incluidos
+                                Q198.21 del 12% de IVA</div>
+                            <div class="mb-4">
+                                <button
+                                    class="font-medium text-sm inline-flex items-center justify-center px-3 py-2 border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out w-full bg-blue-500 hover:bg-blue-600 text-white focus:outline-none focus-visible:ring-2">Pagar
+                                    Q1,850.00</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PayPal form -->
+                    <!-- <div x-show="!card" x-cloak>
+                        <div>
+                            <div class="mb-4">
+                                <button
+                                    class="font-medium text-sm inline-flex items-center justify-center px-3 py-2 border border-transparent rounded leading-5 shadow-sm transition duration-150 ease-in-out w-full bg-indigo-500 hover:bg-indigo-600 text-white focus:outline-none focus-visible:ring-2">Pay
+                                    with PayPal - $253.00</button>
+                            </div>
+                            <div class="text-xs text-gray-500 italic text-center">You'll be charged $253, including
+                                $48
+                                for VAT in Italy</div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
